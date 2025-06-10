@@ -3,7 +3,7 @@
 Program Name: Blinds Controller	
 Author:Addisu Lococo
 Date:2/27/2025
-Program Description:Write a program that brings in 5 floating poit numbers from data.txt file
+Program Description:Write a program that brings in 5 floating point numbers from data.txt file
 */
 
 
