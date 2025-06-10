@@ -1,0 +1,39 @@
+/*
+Program Name: Hypotenuse Finder 
+Author: Addisu Lococo
+Date: 1/23/2025
+*/
+
+#include <iostream>
+#include <cmath> // For sqrt function
+
+using namespace std;
+
+// This program calculates the hypotenuse of a right triangle
+// based on user-supplied lengths of the other two sides.
+
+int main() {
+    // Declare variables 
+    double sideA; // Length of side A of a right triangle (not hypotenuse) -- entered by user & used to calculate hypotenuse
+    double sideB; // Length of side B of a right triangle (not hypotenuse) -- entered by user & used to calculate hypotenuse
+    double hypotenuse; // Length of the hypotenuse calculated from sideA and sideB using Pythagorean Theorum, output as result
+
+    // Output introduction to the user
+    cout << "Welcome to the Hypotenuse Calculator!" << endl;
+    cout << "This program calculates the hypotenuse of a right triangle." << endl;
+    cout << "Please enter the lengths of the two sides (no units):" << endl;
+
+    // Get user input for the lengths of the sides
+    cout << "Length of side A: ";
+    cin >> sideA;
+    cout << "Length of side B: ";
+    cin >> sideB;
+
+    // Calculate the hypotenuse using the Pythagorean theorem
+    hypotenuse = sqrt((sideA * sideA) + (sideB * sideB));
+
+    // Display the result to the user
+    cout << "The length of the hypotenuse is: " << hypotenuse << endl;
+
+    return 0;
+}
